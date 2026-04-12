@@ -263,9 +263,8 @@ footer a { color: var(--accent); }
   .slide-inner h1 { font-size: 1.8rem; }
   .slide-inner p { font-size: 0.9rem; }
   .slide-meta { flex-direction: column; align-items: flex-start; gap: 1rem; }
-  .slider-arrow { width: 32px; height: 32px; font-size: 0.8rem; }
-  .slider-arrow.left { left: 1rem; }
-  .slider-arrow.right { right: 1rem; }
+  .slider-arrow { display: none; }
+  .slide { padding: 1.5rem 1.25rem 4rem 1.25rem; }
   .slider-dots { bottom: 2rem; }
 
   /* Posts */
