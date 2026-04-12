@@ -251,8 +251,50 @@ footer a { color: var(--accent); }
 
 /* Responsive */
 @media (max-width: 768px) {
-  nav ul { gap: 1rem; }
+  /* Nav */
+  header { padding: 1rem; }
+  nav ul { gap: 0.75rem; }
+  nav ul a { font-size: 0.85rem; }
+  .logo { font-size: 1.2rem; }
+
+  /* Slider */
+  .hero-slider { height: auto; min-height: 85vh; }
+  .slide { padding: 2rem 1.5rem; padding-bottom: 5rem; }
+  .slide-inner h1 { font-size: 1.8rem; }
+  .slide-inner p { font-size: 0.9rem; }
+  .slide-meta { flex-direction: column; align-items: flex-start; gap: 1rem; }
+  .slider-arrow { width: 32px; height: 32px; font-size: 0.8rem; }
+  .slider-arrow.left { left: 1rem; }
+  .slider-arrow.right { right: 1rem; }
+  .slider-dots { bottom: 2rem; }
+
+  /* Posts */
+  .posts-section { padding: 2rem 1rem; }
   .posts-grid { grid-template-columns: 1fr; }
+  .posts-section h2 { font-size: 1.4rem; }
+
+  /* Cards */
+  .card { padding: 1.25rem; }
+
+  /* Single post */
+  .post { padding: 2rem 1rem; }
+  .post-header h1 { font-size: 1.6rem; }
+
+  /* About */
+  .about { padding: 2rem 1rem; }
+  .about h1 { font-size: 1.8rem; }
+  .about-grid { grid-template-columns: 1fr; }
+  .about-content p { font-size: 0.95rem; }
+
+  /* Footer */
+  footer { padding: 1.5rem 1rem; font-size: 0.8rem; }
+}
+
+@media (max-width: 480px) {
+  .slide-inner h1 { font-size: 1.5rem; }
+  nav ul { gap: 0.5rem; }
+  nav ul a { font-size: 0.8rem; }
+  .btn { padding: 0.7rem 1.5rem; font-size: 0.85rem; }
 }
 
 /* Slider */
