@@ -1,0 +1,15 @@
+{{ define "main" }}
+<section class="posts-section">
+  <h2>{{ .Title }}</h2>
+  <div class="posts-grid">
+    {{ range .Pages }}
+    <a href="{{ .Permalink }}" class="card">
+      <span class="card-tag">{{ index .Params.tags 0 }}</span>
+      <h3>{{ .Title }}</h3>
+      <p>{{ .Summary }}</p>
+      <span class="card-date">{{ .Date.Format "Jan 2, 2006" }}</span>
+    </a>
+    {{ end }}
+  </div>
+</section>
+{{ end }}

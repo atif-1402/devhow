@@ -1,0 +1,4 @@
+baseURL = 'https://devhow.xyz/'
+languageCode = 'en-us'
+title = 'DevHow'
+theme = 'devhow'
