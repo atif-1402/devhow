@@ -372,8 +372,8 @@ body.sidebar-open .site-sidebar {
 
 .card:hover {
   border-color: var(--accent);
-  transform: translateY(-4px);
-  box-shadow: 0 8px 32px rgba(74, 222, 128, 0.14);
+  transform: translateY(-1px);
+  box-shadow: 0 8px 16px rgba(74, 222, 128, 0.14);
 }
 
 .card h3 {
@@ -1243,4 +1243,36 @@ footer a { color: var(--accent); }
     max-width: 100%;
     overflow-x: auto;
   }
+}
+
+.callout {
+  border: 1px solid var(--border);
+  background: var(--bg2);
+  padding: 14px 16px;
+  border-radius: 8px;
+  margin:1rem 0;
+}
+
+.callout strong {
+  display: block;
+  margin-bottom: 12px;
+  color: var(--fg);
+}
+
+.callout-content {
+  color: var(--muted);
+  margin-bottom: -20px;
+}
+
+/* optional types */
+.callout.info {
+  border-left: 1px solid #4ade80;
+}
+
+.callout.warning {
+  border-left: 1px solid #facc15;
+}
+
+.callout.error {
+  border-left: 1px solid #f87171;
 }
